@@ -1,0 +1,14 @@
+public class SwapingUsingThreeDigits {
+    void swap(int a,int b)
+    {
+        int temp=a;
+        a=b;
+        b=temp;
+        System.out.println("After swapping:a="+a+", b="+b);
+    }
+    public static void main(String[] args)
+    {
+        SwapingUsingThreeDigits obj=new SwapingUsingThreeDigits();
+        obj.swap(7,6);
+    }
+}
