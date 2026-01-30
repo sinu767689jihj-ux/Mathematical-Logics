@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class CountNumbers1
+{
+    void countDigits(int number)
+    {
+        int count=0;
+        while(number>0)//condition is true executed the loop
+        {
+            count=count+1;//count becomes one util loop is false
+            number/=10;//number divided by 10 number goes while loop
+        }
+        System.out.println(count);
+    }
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int number=sc.nextInt();
+        CountNumbers1 m=new CountNumbers1();
+        m.countDigits(number);
+        sc.close();
+    }
+}//Time complexity:O(log n):less memory space compare to for loop logic
