@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class TotalSum2 {
+    void totalSum(int number)
+    {
+        int sum=0;
+        for(int i=1;i<=number;i++)
+        {
+            sum=sum+i;
+        }
+        System.out.println(sum);
+    }
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        TotalSum2 obj=new TotalSum2();
+        int number=sc.nextInt();
+        obj.totalSum(number);
+        sc.close();
+    }
+}
