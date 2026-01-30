@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class ProductOfNumbers2 {
+    void product(int number)
+    {
+        int product=1;
+        for(int i=1;i<=number;i++)
+        {
+            product=product+i*i;
+        }
+        System.out.println(product);
+    }
+    public static void main(String[] args)
+    {
+       Scanner sc=new Scanner(System.in);
+       int number=sc.nextInt();
+       ProductOfNumbers2 product=new ProductOfNumbers2();
+       product.product(number);
+       sc.close();
+    }
+}
+
