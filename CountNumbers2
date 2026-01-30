@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class CountNumbers2 {
+    void countDigits(int number)
+    {
+        int count=0;
+        for(int i=0;i<number;i++)
+        {
+            count=count+1;
+        }
+        System.out.println(count);
+    }
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int number=sc.nextInt();
+        CountNumbers2 n=new CountNumbers2();
+        n.countDigits(number);
+        sc.close();
+    }
+}
+//Time complexity:O(n):take large memory space
